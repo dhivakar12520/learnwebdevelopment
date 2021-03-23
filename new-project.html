@@ -1,0 +1,138 @@
+<html>
+    <body>
+        <section>
+            <div class="cord">
+                <div class="box">
+                    <div class="front_div" class="front">
+                        <img src="burger/1.jpg">
+                    </div>
+                    <div class="back">
+                        <div>
+                            <h1>Burger</h1>
+                            <p>Spl Chicken Burger<br>Double Patty Burger</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="cord">
+                <div class="box">
+                    <div class="front_div" class="front">
+                        <img src="burger/2.jpg">
+                    </div>
+                    <div class="back">
+                        <div>
+                            <h1>FrenchFries</h1>
+                            <p>Spl Chicken Burger<br>Double Patty Burger</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="cord">
+                <div class="box">
+                    <div class="front_div" class="front">
+                        <img src="burger/oreo.jpg">
+                    </div>
+                    <div class="back">
+                        <div>
+                            <h1>Milkshakes</h1>
+                            <p>Spl Chicken Burger<br>Double Patty Burger</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </section>      
+        <style>
+        body
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    section
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transform-style: preserve-3d;
+        width:1100px;
+    }
+    section .cord
+    {
+        position: relative;
+        width:320px;
+        height:320px;
+        margin:20px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+    section .cord .box
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+        transform-style: preserve-3d;
+        transition: 1s;
+    }
+    section .cord:hover .box
+    {
+        transform: rotateY(180deg);
+    }
+    section .cord .box .front_div
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+    }
+    section .cord .box .front_div img
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+        object-fit: cover;  
+    }
+    section .cord .box  .back
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #333;
+        backface-visibility: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+    }
+    section .cord .box .back div
+    {
+        transform-style: preserve-3d;
+        padding: 20px;
+        background: linear-gradient(45deg,#fe0061,#ffeb3b);
+        transform:translateZ(100px);
+    }
+    section .cord .box .back div h1
+    {
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    section .cord .box .back div p
+    {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+        </style>
+        
+    </body>
+</html>

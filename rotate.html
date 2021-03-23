@@ -1,0 +1,126 @@
+<html>
+    <body>
+        <section>
+            <div class="card">
+                <div class="content_body">
+                    <div class="front">
+                        <img src="9904.jpg">
+
+                    </div>
+                    <div class="back">
+                        <div>
+                            <h1>hello every one</h1>
+                            <p>i am a beginner.i am learning html in visual studio and using css.i learn how to use hover in html web page. i am going to learn little more stuffes.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="button"><button type="menu">Menu</button></div>
+        </section>
+        <style>
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            section
+            {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                transform-style: preserve-3d;
+                width: 100%;
+                height: 391px;
+                position: absolute;
+            }
+            section .card
+            {
+                position: relative;
+                width: 310px;
+                height: 380px;
+                margin: 10%;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+            }
+            section .card .content_body
+            {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: 1s;
+            }
+            section .card:hover .content_body
+            {
+                transform: rotateY(180deg);
+            }
+            section .card .content_body .front
+            {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height:100%;
+            }
+            section .card .content_body .front img
+            {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            section .card .content_body .back
+            {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                background-color: lightslategrey;
+                backface-visibility: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform-style: preserve-3d;
+                transform: rotateY(180deg);
+            }
+            section .card .content_body .back div
+            {
+                transform-style: preserve-3d;
+                padding: 20px;
+                background:linear-gradient(45deg,#fe0061,#ffeb3b);
+                transform: rotateZ(100px);
+
+            }
+            section .card .content_body .back div h1
+            {
+                color: #ffffff;
+                font-size: 20px;
+                letter-spacing: 1px;
+                
+            }
+            section .card .content_body .back div p
+            {
+                color: lavender;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .button
+            {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+            }
+
+        </style>
+    </body>
+</html>
